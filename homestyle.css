@@ -1,0 +1,113 @@
+
+#preloader{
+    width:100%;
+    height:100vh;
+    z-index:100;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    position:absolute;
+    background-color:rgb(255, 196, 0);
+}
+nav{
+    position:sticky;
+}
+li.profile-dropdown ul.dropdown-menu {
+    margin:auto;
+    margin: right 10vw;
+    border-radius: 0em;
+    border-top-width: 0.2em;
+    border-left-width:0em;
+    border-right-width:0em;
+    border-bottom-width:0em;
+    border-style:solid;
+    border-color:goldenrod;
+    -webkit-box-shadow: 0 1em 2em rgba(0,0,0,.175);
+    box-shadow:  0 1em 2em rgba(0,0,0,.175);
+    padding-top:0em;
+    padding-bottom:0em;
+    background-color: rgba(229, 248, 146, 0.4);
+}
+li.profile-dropdown ul.dropdown-menu li{
+    border-top:none;
+    border-bottom: 0.07rem;
+    border-bottom-style:solid;
+    border-bottom-color:rgba(218, 146, 39,0.8);
+}
+li.profile-dropdown ul.dropdown-menu li a.dropdown-item{
+   font-size:smaller;
+}
+li.profile-dropdown ul.dropdown-menu li a.dropdown-item:hover{
+   background-color:rgb(252, 216, 56);
+   transition:0.4s;
+}
+.animate{
+    animation-duration:0.6s;
+    -webkit-animation-duration:0.6s;
+    animation-fill-mode:both;
+    -webkit-animation-fill-mode:both;
+}
+@keyframes slideDown{
+0%{
+    transform:scaleY(0);
+    transform-origin: center top 0;
+}
+100%{
+    transform:scaleY(1);
+    transform-origin:center top 0;
+}
+}
+.slideDown{
+animation-name:slideDown;
+-webkit-animation-name:slideDown;
+}
+
+.container{
+    position:relative;
+    display:flex;
+    max-width:75rem;
+    flex-wrap:wrap;
+    z-index:1;
+    }
+    .container .cardd{
+    position:relative;
+    width:100%;
+    height:19em;
+    box-shadow:1em 1em 3em rgba(0,0,0,0.5);
+    border-radius:1em;
+    background:rgba(255,255,255,0.1);
+    overflow:hidden;
+    display:flex;
+    margin-left:3%;
+    margin-top:7%;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter:blur(0.25rem);
+    }
+    .container .card .content
+    {
+    padding:1.25rem;
+    opacity:1;
+    }
+    .btn{
+        background-color:brown;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+   .services{
+       display:inline-block;
+       margin: 3em;
+       width:100vw;
+   }
+   .fitcard{
+       position:flex;
+       flex-direction: row;
+       width:fit-content 100%;
+
+   }
+   .card{
+     background-color:rgb(255, 196, 0);
+   }
+    
